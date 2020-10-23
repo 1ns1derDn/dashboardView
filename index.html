@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="wrapper__inner">
+        <aside class="aside">
+          <div class="aside__wrapper">
+            <div class="aside__logo logo">
+              <a class="logo__link" href="#">
+                <img class="logo__img" src="img/logo.svg" alt="logotype">
+              </a>
+            </div>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav-item">
+                  <a class="nav-item__link" href="">
+                    <svg class="nav-item__icon" width="16" height="16" viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.5232 8.94116H8.54412L13.1921 13.5891C13.3697 13.7667 13.6621 13.7812 13.8447 13.6091C14.9829 12.5367 15.7659 11.0912 15.9956 9.46616C16.035 9.18793 15.8041 8.94116 15.5232 8.94116ZM15.0576 7.03528C14.8153 3.52176 12.0076 0.714119 8.49412 0.471767C8.22589 0.453237 8 0.679413 8 0.948236V7.5294H14.5815C14.8503 7.5294 15.0762 7.30352 15.0576 7.03528ZM6.58824 8.94116V1.96206C6.58824 1.68118 6.34147 1.45029 6.06353 1.48971C2.55853 1.985 -0.120585 5.04705 0.00412089 8.71675C0.132356 12.4856 3.37736 15.5761 7.14794 15.5288C8.6303 15.5103 10 15.0326 11.1262 14.2338C11.3585 14.0691 11.3738 13.727 11.1724 13.5256L6.58824 8.94116Z" />
+                    </svg>
+                    <span class="nav-item__text">Overview</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item__link" href="">
+                    <svg class="nav-item__icon" width="16" height="12" viewBox="0 0 16 12"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.55556 3.33334H12.4444V8.66667H3.55556V3.33334ZM14.6667 6C14.6667 6.73639 15.2636 7.33334 16 7.33334V10C16 10.7364 15.4031 11.3333 14.6667 11.3333H1.33333C0.596944 11.3333 0 10.7364 0 10V7.33334C0.736389 7.33334 1.33333 6.73639 1.33333 6C1.33333 5.26362 0.736389 4.66667 0 4.66667V2.00001C0 1.26362 0.596944 0.666672 1.33333 0.666672H14.6667C15.4031 0.666672 16 1.26362 16 2.00001V4.66667C15.2636 4.66667 14.6667 5.26362 14.6667 6ZM13.3333 3.11112C13.3333 2.74292 13.0349 2.44445 12.6667 2.44445H3.33333C2.96514 2.44445 2.66667 2.74292 2.66667 3.11112V8.88889C2.66667 9.25709 2.96514 9.55556 3.33333 9.55556H12.6667C13.0349 9.55556 13.3333 9.25709 13.3333 8.88889V3.11112Z" />
+                    </svg>
+                    <span class="nav-item__text">Tickets</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item__link" href="">
+                    <svg class="nav-item__icon" width="16" height="12" viewBox="0 0 16 12"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.4 5.19999C3.2825 5.19999 4 4.48249 4 3.59999C4 2.71749 3.2825 1.99999 2.4 1.99999C1.5175 1.99999 0.8 2.71749 0.8 3.59999C0.8 4.48249 1.5175 5.19999 2.4 5.19999ZM13.6 5.19999C14.4825 5.19999 15.2 4.48249 15.2 3.59999C15.2 2.71749 14.4825 1.99999 13.6 1.99999C12.7175 1.99999 12 2.71749 12 3.59999C12 4.48249 12.7175 5.19999 13.6 5.19999ZM14.4 5.99999H12.8C12.36 5.99999 11.9625 6.17749 11.6725 6.46499C12.68 7.01749 13.395 8.01499 13.55 9.2H15.2C15.6425 9.2 16 8.84249 16 8.39999V7.59999C16 6.71749 15.2825 5.99999 14.4 5.99999ZM8 5.99999C9.5475 5.99999 10.8 4.74749 10.8 3.19999C10.8 1.65249 9.5475 0.399994 8 0.399994C6.4525 0.399994 5.2 1.65249 5.2 3.19999C5.2 4.74749 6.4525 5.99999 8 5.99999ZM9.92 6.79999H9.7125C9.1925 7.04999 8.615 7.19999 8 7.19999C7.385 7.19999 6.81 7.04999 6.2875 6.79999H6.08C4.49 6.79999 3.2 8.08999 3.2 9.67999V10.4C3.2 11.0625 3.7375 11.6 4.4 11.6H11.6C12.2625 11.6 12.8 11.0625 12.8 10.4V9.67999C12.8 8.08999 11.51 6.79999 9.92 6.79999ZM4.3275 6.46499C4.0375 6.17749 3.64 5.99999 3.2 5.99999H1.6C0.7175 5.99999 0 6.71749 0 7.59999V8.39999C0 8.84249 0.3575 9.2 0.8 9.2H2.4475C2.605 8.01499 3.32 7.01749 4.3275 6.46499Z" />
+                    </svg>
+                    <span class="nav-item__text">Contacts</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item__link" href="">
+                    <svg class="nav-item__icon" width="14" height="16" viewBox="0 0 14 16"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 8C9.20938 8 11 6.20937 11 4C11 1.79063 9.20938 0 7 0C4.79063 0 3 1.79063 3 4C3 6.20937 4.79063 8 7 8ZM9.99375 9.01875L8.5 15L7.5 10.75L8.5 9H5.5L6.5 10.75L5.5 15L4.00625 9.01875C1.77812 9.125 0 10.9469 0 13.2V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V13.2C14 10.9469 12.2219 9.125 9.99375 9.01875Z" />
+                    </svg>
+                    <span class="nav-item__text">Tasks</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item__link" href="">
+                    <svg class="nav-item__icon" width="14" height="16" viewBox="0 0 14 16"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14 11.25V0.75C14 0.334375 13.6656 0 13.25 0H3C1.34375 0 0 1.34375 0 3V13C0 14.6562 1.34375 16 3 16H13.25C13.6656 16 14 15.6656 14 15.25V14.75C14 14.5156 13.8906 14.3031 13.7219 14.1656C13.5906 13.6844 13.5906 12.3125 13.7219 11.8313C13.8906 11.6969 14 11.4844 14 11.25ZM4 4.1875C4 4.08437 4.08437 4 4.1875 4H10.8125C10.9156 4 11 4.08437 11 4.1875V4.8125C11 4.91563 10.9156 5 10.8125 5H4.1875C4.08437 5 4 4.91563 4 4.8125V4.1875ZM4 6.1875C4 6.08437 4.08437 6 4.1875 6H10.8125C10.9156 6 11 6.08437 11 6.1875V6.8125C11 6.91563 10.9156 7 10.8125 7H4.1875C4.08437 7 4 6.91563 4 6.8125V6.1875ZM11.9187 14H3C2.44688 14 2 13.5531 2 13C2 12.45 2.45 12 3 12H11.9187C11.8594 12.5344 11.8594 13.4656 11.9187 14Z" />
+                    </svg>
+                    <span class="nav-item__text">Articles</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="nav-item nav-item--top-line">
+            <a class="nav-item__link" href="#">
+              <svg class="nav-item__icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.2313 9.86558L13.9 9.09683C14.0344 8.37183 14.0344 7.62808 13.9 6.90308L15.2313 6.13433C15.3844 6.04683 15.4531 5.86558 15.4031 5.69683C15.0563 4.58433 14.4656 3.57808 13.6938 2.74058C13.575 2.61246 13.3813 2.58121 13.2313 2.66871L11.9 3.43746C11.3406 2.95621 10.6969 2.58433 10 2.34058V0.806206C10 0.631206 9.87814 0.478081 9.70627 0.440581C8.55939 0.184331 7.38439 0.196831 6.29377 0.440581C6.12189 0.478081 6.00002 0.631206 6.00002 0.806206V2.34371C5.30627 2.59058 4.66252 2.96246 4.10002 3.44058L2.77189 2.67183C2.61877 2.58433 2.42814 2.61246 2.30939 2.74371C1.53752 3.57808 0.946895 4.58433 0.60002 5.69996C0.546895 5.86871 0.61877 6.04996 0.771895 6.13746L2.10314 6.90621C1.96877 7.63121 1.96877 8.37496 2.10314 9.09996L0.771895 9.86871C0.61877 9.95621 0.55002 10.1375 0.60002 10.3062C0.946895 11.4187 1.53752 12.425 2.30939 13.2625C2.42814 13.3906 2.62189 13.4218 2.77189 13.3343L4.10314 12.5656C4.66252 13.0468 5.30627 13.4187 6.00314 13.6625V15.2C6.00314 15.375 6.12502 15.5281 6.29689 15.5656C7.44377 15.8218 8.61877 15.8093 9.70939 15.5656C9.88127 15.5281 10.0031 15.375 10.0031 15.2V13.6625C10.6969 13.4156 11.3406 13.0437 11.9031 12.5656L13.2344 13.3343C13.3875 13.4218 13.5781 13.3937 13.6969 13.2625C14.4688 12.4281 15.0594 11.4218 15.4063 10.3062C15.4531 10.1343 15.3844 9.95308 15.2313 9.86558ZM8.00002 10.5C6.62189 10.5 5.50002 9.37808 5.50002 7.99996C5.50002 6.62183 6.62189 5.49996 8.00002 5.49996C9.37814 5.49996 10.5 6.62183 10.5 7.99996C10.5 9.37808 9.37814 10.5 8.00002 10.5Z" />
+              </svg>
+              <span class="nav-item__text">Settings</span>
+            </a>
+          </div>
+        </aside>
+        <div class="content">
+          <header class="content__header header">
+            <div class="header__wrapper">
+              <h1 class="header__title">
+                Overview
+              </h1>
+              <div class="header__buttons">
+                <button class="button-search">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6.5" cy="6.5" r="5.75" stroke="#C5C7CD" stroke-width="1.5" />
+                    <path d="M11 11L15 15" stroke="#C5C7CD" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </button>
+                <a class="link-bell link-bell--message" href="#">
+                  <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.99999 16C8.10374 16 8.99905 15.1047 8.99905 14H5.00093C5.00093 15.1047 5.89624 16 6.99999 16ZM13.7309 11.3216C13.1272 10.6728 11.9975 9.69687 11.9975 6.5C11.9975 4.07188 10.295 2.12812 7.99937 1.65125V1C7.99937 0.447812 7.55187 0 6.99999 0C6.44812 0 6.00062 0.447812 6.00062 1V1.65125C3.70499 2.12812 2.00249 4.07188 2.00249 6.5C2.00249 9.69687 0.872804 10.6728 0.269054 11.3216C0.0815536 11.5231 -0.00157141 11.7641 -8.9117e-06 12C0.00342859 12.5125 0.405616 13 1.00312 13H12.9969C13.5944 13 13.9969 12.5125 14 12C14.0016 11.7641 13.9184 11.5228 13.7309 11.3216Z"
+                      fill="#C5C7CD" />
+                  </svg>
+                  <svg class="link-bell__new-message" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5" r="3.75" fill="#3751FF" stroke="#F7F8FC" stroke-width="1.5" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <a class="user" href="#">
+              <span class="user__name">
+                Jones Ferdinand
+              </span>
+              <span class="user__cicle">
+                <img src="img/content/user-1.jpg" alt="" class="user__icon">
+              </span>
+            </a>
+          </header>
+          <section class="cards">
+            <ul class="content__cards-list cards-list">
+              <li class="cards-list__item">
+                <a class="card-item" href="#">
+                  <h3 class="card-item__title">Unresolved</h3>
+                  <span class="card-item__count">60</span>
+                </a>
+              </li>
+              <li class="cards-list__item">
+                <a class="card-item" href="#">
+                  <h3 class="card-item__title">Overdue</h3>
+                  <span class="card-item__count">16</span>
+                </a>
+              </li>
+              <li class="cards-list__item">
+                <a class="card-item" href="#">
+                  <h3 class="card-item__title">Open</h3>
+                  <span class="card-item__count">43</span>
+                </a>
+              </li>
+              <li class="cards-list__item">
+                <a class="card-item" href="#">
+                  <h3 class="card-item__title">On hold</h3>
+                  <span class="card-item__count">64</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="tickets-tasks">
+            <div class="card-info tickets-tasks__item">
+              <div class="card-info__head">
+                <div class="card-info__head-box">
+                  <h2 class="card-info__head-title">
+                    Unresolved tickets
+                  </h2>
+                  <a class="card-info__head-link" href="#">
+                    View details
+                  </a>
+                </div>
+                <span class="card-info__head-name">
+                  Group: <span>Support</span>
+                </span>
+              </div>
+              <ul class="list-card">
+                <li class="list-card__item">
+                  <a href="#" class="ticket-item">
+                    <span class="ticket-item__name">Waiting on Feature Request</span>
+                    <span class="ticket-item__count">4238</span>
+                  </a>
+                </li>
+                <li class="list-card__item">
+                  <a href="#" class="ticket-item">
+                    <span class="ticket-item__name">Awaiting Customer Response</span>
+                    <span class="ticket-item__count">1005</span>
+                  </a>
+                </li>
+                <li class="list-card__item">
+                  <a href="#" class="ticket-item">
+                    <span class="ticket-item__name">Awaiting Developer Fix</span>
+                    <span class="ticket-item__count">914</span>
+                  </a>
+                </li>
+                <li class="list-card__item">
+                  <a href="#" class="ticket-item">
+                    <span class="ticket-item__name">Pending</span>
+                    <span class="ticket-item__count">281</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-info tickets-tasks__item">
+              <div class="card-info__head">
+                <div class="card-info__head-box">
+                  <h2 class="card-info__head-title">
+                    Tasks
+                  </h2>
+                  <a class="card-info__head-link" href="#">
+                    View all
+                  </a>
+                </div>
+                <span class="card-info__head-name">
+                  Create new task
+                </span>
+              </div>
+              <ul class="list-card">
+                <li class="list-card__item">
+                  <div class="create-task">
+                    <div class="create-task__name">
+                      Create new task
+                    </div>
+                    <button class="button-add">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1V11" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round" />
+                        <path d="M11 6L1 6" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round" />
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li class="list-card__item">
+                  <div class="list-item-task">
+                    <div class="checkbox">
+                      <input class="checkbox__input" type="checkbox" id="1">
+                      <label class="checkbox__label" for="1">Finish ticket update</label>
+                    </div>
+                    <div class="task-marker task-marker--urgent">
+                      <span class="task-marker__urgent">Urgent</span>
+                      <span class="task-marker__new">New</span>
+                      <span class="task-marker__default">Default</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-card__item">
+                  <div class="list-item-task">
+                    <div class="checkbox">
+                      <input class="checkbox__input" type="checkbox" id="2">
+                      <label class="checkbox__label" for="2">Create new ticket example</label>
+                    </div>
+                    <div class="task-marker task-marker--new">
+                      <span class="task-marker__urgent">Urgent</span>
+                      <span class="task-marker__new">New</span>
+                      <span class="task-marker__default">Default</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-card__item">
+                  <div class="list-item-task">
+                    <div class="checkbox">
+                      <input class="checkbox__input" type="checkbox" id="3">
+                      <label class="checkbox__label" for="3">Update ticket report</label>
+                    </div>
+                    <div class="task-marker task-marker--default">
+                      <span class="task-marker__urgent">Urgent</span>
+                      <span class="task-marker__new">New</span>
+                      <span class="task-marker__default">Default</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="all-tickets">
+            <div class="all-tickets__panal">
+              <h3 class="all-tickets__title">
+                All tickets
+              </h3>
+              <div class="all-tickets__button">
+                <button class="button-sort">
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.128568 2.26839L2.31563 0.125478C2.48647 -0.0418526 2.7636 -0.0417991 2.93434 0.125478L5.12132 2.26839C5.39667 2.53812 5.20059 3.00001 4.81195 3.00001H3.5V11.5714C3.5 11.8081 3.30414 12 3.0625 12H2.1875C1.94586 12 1.75 11.8081 1.75 11.5714V3.00001H0.437935C0.0485329 3.00001 -0.146209 2.53758 0.128568 2.26839ZM6.5625 1.7143H13.5625C13.8041 1.7143 14 1.52243 14 1.28573V0.428584C14 0.191879 13.8041 1.34454e-05 13.5625 1.34454e-05H6.5625C6.32086 1.34454e-05 6.125 0.191879 6.125 0.428584V1.28573C6.125 1.52243 6.32086 1.7143 6.5625 1.7143ZM6.125 4.71429V3.85715C6.125 3.62045 6.32086 3.42858 6.5625 3.42858H11.8125C12.0541 3.42858 12.25 3.62045 12.25 3.85715V4.71429C12.25 4.951 12.0541 5.14287 11.8125 5.14287H6.5625C6.32086 5.14287 6.125 4.951 6.125 4.71429ZM6.125 11.5714V10.7143C6.125 10.4776 6.32086 10.2857 6.5625 10.2857H8.3125C8.55414 10.2857 8.75 10.4776 8.75 10.7143V11.5714C8.75 11.8081 8.55414 12 8.3125 12H6.5625C6.32086 12 6.125 11.8081 6.125 11.5714ZM6.125 8.14286V7.28572C6.125 7.04901 6.32086 6.85715 6.5625 6.85715H10.0625C10.3041 6.85715 10.5 7.04901 10.5 7.28572V8.14286C10.5 8.37957 10.3041 8.57143 10.0625 8.57143H6.5625C6.32086 8.57143 6.125 8.37957 6.125 8.14286Z"
+                      fill="#C5C7CD" />
+                  </svg>
+                  <span>
+                    Sort
+                  </span>
+                </button>
+                <button class="filter">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.4369 0H0.563154C0.0635131 0 -0.188604 0.606234 0.165419 0.960258L4.5 5.29549V10.125C4.5 10.3085 4.58955 10.4805 4.73993 10.5858L6.61493 11.8979C6.98484 12.1568 7.5 11.8944 7.5 11.437V5.29549L11.8347 0.960258C12.188 0.606937 11.9376 0 11.4369 0Z"
+                      fill="#C5C7CD" />
+                  </svg>
+                  <span>
+                    Filter
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="table-tickets">
+              <div class="table-tickets__head">
+                <h3 class="table-tickets__title tickets-details">Ticket details</h3>
+                <h3 class="table-tickets__title tickets-customer">Customer name</h3>
+                <h3 class="table-tickets__title tickets-date">Date</h3>
+                <h3 class="table-tickets__title tickets-priority">Priority</h3>
+              </div>
+              <ul class="table-tickets-list">
+                <li class="table-tickets-list__item">
+                  <a class="ticket-user" href="#">
+                    <div class="ticket-user__details tickets-details">
+                      <img src="img/content/user-1.jpg" alt="" class="ticket-user__img">
+                      <div class="ticket-user__box">
+                        <h4 class="ticket-user__title">Contact Email not Linked</h4>
+                        <span class="ticket-user__data">Updated 1 day ago</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__customer tickets-customer">
+                      <h4 class="ticket-user__title">Tom Cruise</h4>
+                      <span class="ticket-user__data">on 24.05.2019</span>
+                    </div>
+                    <div class="ticket-user__date tickets-date">
+                      <h4 class="ticket-user__title">May 26, 2019</h4>
+                      <span class="ticket-user__data">6:30 PM</span>
+                    </div>
+                    <div class="ticket-user__priority tickets-priority">
+                      <div class="priority priority--high">
+                        <span class="priority__high">High</span>
+                        <span class="priority__low">low</span>
+                        <span class="priority__normal">Normal</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__button">
+                      <button class="more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                            fill="#C5C7CD" />
+                        </svg>
+                      </button>
+                    </div>
+                  </a>
+                </li>
+                <li class="table-tickets-list__item">
+                  <a class="ticket-user" href="#">
+                    <div class="ticket-user__details tickets-details">
+                      <img src="img/content/user-2.jpg" alt="" class="ticket-user__img">
+                      <div class="ticket-user__box">
+                        <h4 class="ticket-user__title">Adding Images to Featured Posts</h4>
+                        <span class="ticket-user__data">Updated 1 day ago</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__customer tickets-customer">
+                      <h4 class="ticket-user__title">Matt Damon</h4>
+                      <span class="ticket-user__data">on 24.05.2019</span>
+                    </div>
+                    <div class="ticket-user__date tickets-date">
+                      <h4 class="ticket-user__title">May 26, 2019</h4>
+                      <span class="ticket-user__data">8:00 AM</span>
+                    </div>
+                    <div class="ticket-user__priority tickets-priority">
+                      <div class="priority priority--low">
+                        <span class="priority__high">High</span>
+                        <span class="priority__low">low</span>
+                        <span class="priority__normal">Normal</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__button">
+                      <button class="more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                            fill="#C5C7CD" />
+                        </svg>
+                      </button>
+                    </div>
+                  </a>
+                </li>
+                <li class="table-tickets-list__item">
+                  <a class="ticket-user" href="#">
+                    <div class="ticket-user__details tickets-details">
+                      <img src="img/content/user-3.jpg" alt="" class="ticket-user__img">
+                      <div class="ticket-user__box">
+                        <h4 class="ticket-user__title">When will I be charged this month?</h4>
+                        <span class="ticket-user__data">Updated 1 day ago</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__customer tickets-customer">
+                      <h4 class="ticket-user__title">Robert Downey</h4>
+                      <span class="ticket-user__data">on 24.05.2019</span>
+                    </div>
+                    <div class="ticket-user__date tickets-date">
+                      <h4 class="ticket-user__title">May 26, 2019</h4>
+                      <span class="ticket-user__data">7:30 PM</span>
+                    </div>
+                    <div class="ticket-user__priority tickets-priority">
+                      <div class="priority priority--high">
+                        <span class="priority__high">High</span>
+                        <span class="priority__low">low</span>
+                        <span class="priority__normal">Normal</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__button">
+                      <button class="more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                            fill="#C5C7CD" />
+                        </svg>
+                      </button>
+                    </div>
+                  </a>
+                </li>
+                <li class="table-tickets-list__item">
+                  <a class="ticket-user" href="#">
+                    <div class="ticket-user__details tickets-details">
+                      <img src="img/content/user-4.jpg" alt="" class="ticket-user__img">
+                      <div class="ticket-user__box">
+                        <h4 class="ticket-user__title">Payment not going through</h4>
+                        <span class="ticket-user__data">Updated 2 days ago</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__customer tickets-customer">
+                      <h4 class="ticket-user__title">Christian Bale</h4>
+                      <span class="ticket-user__data">on 24.05.2019</span>
+                    </div>
+                    <div class="ticket-user__date tickets-date">
+                      <h4 class="ticket-user__title">May 26, 2019</h4>
+                      <span class="ticket-user__data">5:00 PM</span>
+                    </div>
+                    <div class="ticket-user__priority tickets-priority">
+                      <div class="priority priority--normal">
+                        <span class="priority__high">High</span>
+                        <span class="priority__low">low</span>
+                        <span class="priority__normal">Normal</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__button">
+                      <button class="more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                            fill="#C5C7CD" />
+                        </svg>
+                      </button>
+                    </div>
+                  </a>
+                </li>
+                <li class="table-tickets-list__item">
+                  <a class="ticket-user" href="#">
+                    <div class="ticket-user__details tickets-details">
+                      <img src="img/content/user-5.jpg" alt="" class="ticket-user__img">
+                      <div class="ticket-user__box">
+                        <h4 class="ticket-user__title">Unable to add replies</h4>
+                        <span class="ticket-user__data">Updated 2 days ago</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__customer tickets-customer">
+                      <h4 class="ticket-user__title">Henry Cavil</h4>
+                      <span class="ticket-user__data">on 24.05.2019</span>
+                    </div>
+                    <div class="ticket-user__date tickets-date">
+                      <h4 class="ticket-user__title">May 26, 2019</h4>
+                      <span class="ticket-user__data">6:30 PM</span>
+                    </div>
+                    <div class="ticket-user__priority tickets-priority">
+                      <div class="priority priority--high">
+                        <span class="priority__high">High</span>
+                        <span class="priority__low">low</span>
+                        <span class="priority__normal">Normal</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__button">
+                      <button class="more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                            fill="#C5C7CD" />
+                        </svg>
+                      </button>
+                    </div>
+                  </a>
+                </li>
+                <li class="table-tickets-list__item">
+                  <a class="ticket-user" href="#">
+                    <div class="ticket-user__details tickets-details">
+                      <img src="img/content/user-6.jpg" alt="" class="ticket-user__img">
+                      <div class="ticket-user__box">
+                        <h4 class="ticket-user__title">Downtime since last week</h4>
+                        <span class="ticket-user__data">Updated 3 days ago</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__customer tickets-customer">
+                      <h4 class="ticket-user__title">Chris Evans</h4>
+                      <span class="ticket-user__data">on 24.05.2019</span>
+                    </div>
+                    <div class="ticket-user__date tickets-date">
+                      <h4 class="ticket-user__title">May 26, 2019</h4>
+                      <span class="ticket-user__data">2:00 PM</span>
+                    </div>
+                    <div class="ticket-user__priority tickets-priority">
+                      <div class="priority priority--normal">
+                        <span class="priority__high">High</span>
+                        <span class="priority__low">low</span>
+                        <span class="priority__normal">Normal</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__button">
+                      <button class="more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                            fill="#C5C7CD" />
+                        </svg>
+                      </button>
+                    </div>
+                  </a>
+                </li>
+                <li class="table-tickets-list__item">
+                  <a class="ticket-user" href="#">
+                    <div class="ticket-user__details tickets-details">
+                      <img src="img/content/user-7.jpg" alt="" class="ticket-user__img">
+                      <div class="ticket-user__box">
+                        <h4 class="ticket-user__title">Referral Bonus</h4>
+                        <span class="ticket-user__data">Updated 4 day ago</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__customer tickets-customer">
+                      <h4 class="ticket-user__title">Sam Smith</h4>
+                      <span class="ticket-user__data">on 24.05.2019</span>
+                    </div>
+                    <div class="ticket-user__date tickets-date">
+                      <h4 class="ticket-user__title">May 26, 2019</h4>
+                      <span class="ticket-user__data">11:30 AM</span>
+                    </div>
+                    <div class="ticket-user__priority tickets-priority">
+                      <div class="priority priority--low">
+                        <span class="priority__high">High</span>
+                        <span class="priority__low">low</span>
+                        <span class="priority__normal">Normal</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__button">
+                      <button class="more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                            fill="#C5C7CD" />
+                        </svg>
+                      </button>
+                    </div>
+                  </a>
+                </li>
+                <li class="table-tickets-list__item">
+                  <a class="ticket-user" href="#">
+                    <div class="ticket-user__details tickets-details">
+                      <img src="img/content/user-8.jpg" alt="" class="ticket-user__img">
+                      <div class="ticket-user__box">
+                        <h4 class="ticket-user__title">How do I change my password?</h4>
+                        <span class="ticket-user__data">Updated 6 days ago</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__customer tickets-customer">
+                      <h4 class="ticket-user__title">Steve Rogers</h4>
+                      <span class="ticket-user__data">on 24.05.2019</span>
+                    </div>
+                    <div class="ticket-user__date tickets-date">
+                      <h4 class="ticket-user__title">May 26, 2019</h4>
+                      <span class="ticket-user__data">1:00 PM</span>
+                    </div>
+                    <div class="ticket-user__priority tickets-priority">
+                      <div class="priority priority--normal">
+                        <span class="priority__high">High</span>
+                        <span class="priority__low">low</span>
+                        <span class="priority__normal">Normal</span>
+                      </div>
+                    </div>
+                    <div class="ticket-user__button">
+                      <button class="more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                            fill="#C5C7CD" />
+                        </svg>
+                      </button>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="table-tickets__footer">
+                <div class="table-tickets__footer-select">
+                  <span class="table-tickets__footer-select-text">Rows per page:</span>
+                  <div class="select" data-select="select">
+                    <div class="select__ovarlaid" data-select-ovarlaid="select"></div>
+                    <div class="select__head" data-select-head="select">
+                      8
+                    </div>
+                    <div class="select__body" data-select-head="select">
+                      <div class="select__item" data-select-item="select">8</div>
+                      <div class="select__item" data-select-item="select">16</div>
+                      <div class="select__item" data-select-item="select">24</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <div class="pagination__page">
+                    <span class="pagination__number-first">1</span>
+                    <span class="pagination__separator">-</span>
+                    <span class="pagination__number-secont">8</span>
+                    <span class="pagination__text">of</span>
+                    <span class="pagination__all">1240</span>
+                  </div>
+                  <div class="pagination__buttons">
+                    <button class="prev">
+                      <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 13L1.07071 7.07071C1.03166 7.03166 1.03166 6.96834 1.07071 6.92929L7 1"
+                          stroke="#9FA2B4" stroke-width="2" stroke-linecap="round" />
+                      </svg>
+                    </button>
+                    <button class="next">
+                      <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13L6.92929 7.07071C6.96834 7.03166 6.96834 6.96834 6.92929 6.92929L1 1"
+                          stroke="#9FA2B4" stroke-width="2" stroke-linecap="round" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
