@@ -1,1 +1,2 @@
 # dashboardView
+view
